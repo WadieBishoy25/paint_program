@@ -1,0 +1,33 @@
+.button{
+  -fx-font-width: bold; 
+  -fx-background-color: #4d4d4d;
+  -fx-background-radius: 20;
+  -fx-font-size: 14;
+  -fx-text-fill: gray; 
+}
+
+.button:hover{
+    
+      -fx-font-vhight: bold; 
+  -fx-background-color: #e6e6e6;
+  -fx-background-radius: 20;
+  -fx-font-size: 14;
+  -fx-text-fill: #4d4d4d;
+  -fx-border-color: transparent;
+  -fx-border-radius: 25;
+  -fx-border-width: 3;
+}
+
+.button:pressed{
+          -fx-font-vhight: bold; 
+  -fx-background-color: #4d4d4d;
+  -fx-background-radius: 20;
+  -fx-font-size: 14;
+  -fx-text-fill: #4d4d4d;
+   -fx-border-color: transparent;
+  -fx-border-radius: 25;
+  -fx-border-width: 3;  
+  
+}
+
+

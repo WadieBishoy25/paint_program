@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.66" prefHeight="734.0" prefWidth="1306.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paint.view.PaintGUIController">
+   <children>
+      <ScrollPane layoutX="1.0" prefHeight="670.0" prefWidth="1093.0" style="-fx-background-radius: 60; -fx-background-color: gray; -fx-border-radius: 20;" AnchorPane.bottomAnchor="-19.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="212.0">
+         <content>
+            <AnchorPane fx:id="canvas" prefHeight="666.0" prefWidth="1070.0" style="-fx-background-color: gray;">
+               <children>
+                  <Pane fx:id="pane" layoutX="62.0" layoutY="61.0" onMouseDragged="#Drag" onMousePressed="#Press" onMouseReleased="#Relesae" prefHeight="542.0" prefWidth="930.0" style="-fx-background-color: white;">
+                     <children>
+                        <Canvas fx:id="DrawingCanvas" height="542.0" width="930.0" />
+                        <Canvas fx:id="DragCanvas" height="542.0" opacity="0.6" width="930.0" />
+                     </children></Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="264.0" layoutY="-86.0" prefHeight="93.0" prefWidth="1302.0" style="-fx-background-color: #333333;" AnchorPane.bottomAnchor="651.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="CloseButton" layoutX="1257.0" layoutY="9.0" minHeight="21.0" minWidth="31.0" mnemonicParsing="false" onAction="#Close" prefHeight="22.0" prefWidth="31.0" style="-fx-background-color: transparent; -fx-background-radius: 20;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Multiply_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="20.0" prefWidth="56.0" text="Paint" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="New" layoutX="56.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#NewButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Add_File_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Open" layoutX="109.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#OpenButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Open_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Save" layoutX="162.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#SaveButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Save_50px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Undo" layoutX="327.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#UndoButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Undo_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Redo" layoutX="380.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#RedoButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Redo_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Move" layoutX="531.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#MoveButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Hand_Cursor_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="resize" layoutX="584.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#ResizeButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Resize_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Delete" layoutX="637.0" layoutY="31.0" minHeight="45.0" minWidth="65.0" mnemonicParsing="false" onAction="#DeleteButton" prefHeight="45.0" prefWidth="65.0" style="-fx-background-color: transparent;" stylesheets="@../../Style/Style.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Trash_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="1230.0" layoutY="9.0" minHeight="21.0" minWidth="31.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="31.0" style="-fx-background-color: transparent; -fx-background-radius: 20;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Subtract_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1056.0" layoutY="83.0" prefHeight="651.0" prefWidth="255.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1056.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="83.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="13.0" layoutY="150.0" prefHeight="24.0" prefWidth="91.0" text="Polygons">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="48.0" prefHeight="24.0" prefWidth="71.0" text="Lines">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <ColorPicker fx:id="BorderColor" layoutX="14.0" layoutY="403.0" prefHeight="28.0" prefWidth="191.0" />
+            <Button fx:id="Line" layoutX="22.0" layoutY="80.0" minWidth="53.0" mnemonicParsing="false" onAction="#LineButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Line_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Circle" layoutX="22.0" layoutY="273.0" minWidth="53.0" mnemonicParsing="false" onAction="#CircleButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Circle_64px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="Square" layoutX="21.0" layoutY="184.0" minWidth="53.0" mnemonicParsing="false" onAction="#SquareButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Unchecked_Checkbox_64px_6.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Traingle" layoutX="131.0" layoutY="184.0" minWidth="53.0" mnemonicParsing="false" onAction="#TriangleButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Triangle_64px_4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Ellipse" layoutX="77.0" layoutY="273.0" minWidth="53.0" mnemonicParsing="false" onAction="#EllipseButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Oval_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Rectangle" layoutX="76.0" layoutY="184.0" minWidth="53.0" mnemonicParsing="false" onAction="#RectangleButton" prefHeight="45.0" prefWidth="55.0" style="-fx-background-color: white;" stylesheets="@../../Style/Style1.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Rectangular_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ColorPicker fx:id="FillColor" layoutX="14.0" layoutY="479.0" prefHeight="28.0" prefWidth="191.0" />
+            <Button fx:id="Refresh" layoutX="11.0" layoutY="624.0" minHeight="13.0" minWidth="53.0" mnemonicParsing="false" onAction="#RefreshButton" prefHeight="13.0" prefWidth="230.0" stylesheets="@../../Style/Style1.css" />
+            <Label layoutX="14.0" layoutY="379.0" prefHeight="24.0" prefWidth="91.0" text="Border">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="455.0" prefHeight="24.0" prefWidth="91.0" text="Fill">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="242.0" prefHeight="24.0" prefWidth="124.0" text="Elliptical Shapes">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/UpdateShape.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Circle.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/SingleCareTaker.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/ShapeFactory.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/CommandControl.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/view/PaintGUIController.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/ShapeSelecter.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Xml.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/ShapeDimentions.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/CareTaker.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/view/Paint.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/ShapeType.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/Style/Style1.css</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/AbstractShape.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Command.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Rectangle.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/AbstractStrategy.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/DrawingControl.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Memento.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/DrawingEngine.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Shape.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Square.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Originator.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/SingleArraylistOfShapes.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/UndoRedoControl.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/AddShape.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Line.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Ellipse.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Jason.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/ShapeIntiallizer.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Model/Triangle.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/RemoveShape.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/SaveChooser.java</file>
+            <file>file:/C:/Users/wadiebishoy/Documents/NetBeansProjects/Paint/src/paint/Controller/Strategy.java</file>
+        </group>
+    </open-files>
+</project-private>
